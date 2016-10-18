@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+  </head>
+  <body>
+
+      <div id='app'>
+
+        <div id='headers'>
+          <h1>Guessing Game</h1>
+          <h2>Guess the Number!</h2>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <input class="button" id="player-input" placeholder="Enter a number between 0 and 100" maxlength="2" autofocus=autofocus>
+            <button type="button" class="button" id="submit" onclick="playersGuessSubmission(), lowerOrHigher()">SUBMIT</button>
+          </div>
+          <div id="menu-btns">
+            <button class="button" onclick="provideHint()">HINT</button>
+            <button class="button" onclick="provideReset()">RESET</button>
+          </div>
+        </div>
+
+        <div id='guesses'>
+          <aside>
+            <table class="scoreboard">
+              <tr>
+                <th>Your Guesses</th>
+                <th>Your Hints</th>
+              </tr>
+              <tr>
+                <td id="guessCount0">-</td>
+                <td> </td>
+              </tr>
+              <tr>
+              <td id="guessCount1">-</td>
+              <td> </td>
+              </tr>
+              <tr>
+                <td id="guessCount2">-</td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td id="guessCount3">-</td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td id="guessCount4">-</td>
+                <td> </td>
+              </tr>
+            </table>
+          </aside>
+        </div>
+
+      </div>
+
+
+
+    <div id='footer'>
+        <div>
+          <div class="footer">
+            <img src='fa-logo@2x.png'></img>
+          </div>
+          <div class="footer">
+            <h4>Project by A.M. RAMSEY</h4>
+          </div>
+
+        </div>
+    </div>
+
+  </body>
+</html>

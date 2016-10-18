@@ -1,0 +1,112 @@
+html {
+  box-sizing: 'border-box'
+}
+
+#app {
+  text-align: center;
+  font-family: Andale Mono;
+  font-weight: normal;
+  color: #00FF00;
+  background-color: #000;
+  float: center;
+}
+
+body {
+  background-color: black;
+  border-color: #00FF00;
+  border-width: 3px;
+}
+
+h1 {
+  font-size: 60px;
+  padding: 5px;
+  border: dotted 5px;
+  margin: 2% 10%;
+  border-width: 3px;
+}
+h2 {
+  font-size: 40px;
+  padding: 5px;
+  margin: 0% 25%;
+  border-width: 3px;
+}
+h4 {
+  color: #00FF00;
+  font-family: Andale Mono;
+}
+.button {
+  text-align: center;
+  font-family: monospace;
+  font-size: 30px;
+  font-weight: normal;
+  color: #00FF00;
+  background-color: #000;
+  border-color: #00FF00;
+  border-width: 3px;
+  margin: 30px 5px;
+  padding: 10px;
+}
+input:focus, button:focus, th:hover, td:hover, h2:hover, h1:hover {
+  color: #000;
+  background-color: #00FF00;
+  border: 3px solid #00FF00;
+  outline: 0;
+  transition: all .5s;
+  transition-timing-function: ease-out;
+}
+input:hover, button:hover {
+  border-style: dotted;
+  border-width: 3px;
+  color: #00FF00;
+  background-color: black;
+  transition-timing-function: ease-out;
+}
+#main {
+  width: 50%;
+  float: center;
+  margin: auto;
+  z-index: -1
+}
+
+#guesses {
+  width: 25%;
+  float: right;
+}
+table, th, td {
+  font-size: 20px;
+  text-align: center;
+  table-layout: fixed;
+  border: 1px solid #00FF00;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th {
+  word-wrap: break-word;
+}
+img {
+    display: inline;
+    width: 300px;
+    height: 100px;
+}
+.footer {
+  display: inline; /*   Why isn't this working? */
+}
+#footer {
+  width: 100%;
+  border-top: none;
+  position: relative;
+  bottom: 0;
+  margin: auto;
+}
+::-webkit-input-placeholder {
+   color: #00FF00;
+   background-color: black;
+   font-family: Monospace;
+   font-size: 16px;
+    padding: 5px;
+}
+
+h1:hover, h2:hover {
+  border: dashed;
+} 
